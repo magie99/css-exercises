@@ -5,7 +5,6 @@ body {
 }
 
 .header {
-  height: 72px;
   background: darkmagenta;
   color: white;
 }
@@ -26,4 +25,70 @@ body {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
+}
+
+/* SOLUTION */
+
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.content{
+  display: flex;
+  flex-grow: 1;
+}
+
+.cards{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-content: space-around;
+  gap: 20px;
+  padding: 48px;
+}
+
+.card{
+ height: 250px;
+  width: 400px;
+  padding: 15px;
+}
+
+a{
+  text-decoration:  none;
+  color: white;
+}
+ ul{
+  list-style: none;
+  padding: 5px;
+  margin-right: 40px;
+ }
+
+ .header{
+  font-size: 32px;
+  font-weight: 900;
+  padding: 16px;
+  display: flex;
+  text-wrap: nowrap;
+ }
+
+ .sidebar{
+  font-size: 24px;
+  padding: 16px;     
+  text-wrap: nowrap;
+  display: flex;
+  align-items: flex-start;
+  flex: 0 0 300px;
+  min-width: 300px;
+ }
+
+ .footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+
+ li {
+  margin-bottom: 16px;
 }
